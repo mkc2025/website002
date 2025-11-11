@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="zlib/ucss/ualign1.css" rel="stylesheet"/>
+
+<title>Calculator-01</title>
+</head>
+
+<table border="0"  class="center-middle">
+    <caption>Calculator-01</caption>
+    <tr>
+        <td>First No.</td>
+        <td><input type="text" id="tbxfno" placeholder="0.0"/></td>
+    </tr>
+    <tr>
+        <td>Second No.</td>
+        <td><input type="text" id="tbxsno" placeholder="0.0"/></td></td>
+    </tr>
+    <tr>
+        <td>Result</td>
+        <td><input type="text" id="tbxres" placeholder="0.0"/></td>
+    </tr>
+    <tr>    
+        <td><input type="button" value="Cancel" onclick="location.href='p06calc01.html';"/></td>
+        <td><input type="button" value="+" onclick="tbxres.value=tbxfno.value + tbxsno.value;"/></td>
+    </tr>
+</table>

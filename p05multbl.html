@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <link href="zlib/ucss/ualign1.css" rel="stylesheet"/>
+
+    <title>Multiplication Table</title>
+<script>
+    function btnFind_onclick(){
+        let mn=nummn.value;
+        let res="";
+        for(let i=1; i<21; i++){
+            res+=(i + "x" + mn + "="+(i*mn))+"\n";
+        }
+        tares.value=res;
+    }
+</script>
+</head>
+
+<table border="0"  class="center-middle">
+    <caption>Multiplication Table</caption>
+    <tr>
+        <td>Multiplication Number</td>
+        <td><input type="number" id="nummn" placeholder="0"/></td>
+    </tr>
+    <tr>
+        <td>Resullt</td>
+        <td><textarea id="tares" rows="20" cols="14" readonly="readonly" style="resize:none;"></textarea></td>
+    </tr>
+        <td><input type="button" value="Cancel" onclick="location.href='p05multbl.html';"/></td>
+        <td><input type="button" value="Find" onclick="btnFind_onclick();"/></td>
+</table>

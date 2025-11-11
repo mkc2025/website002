@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="zlib/ucss/ualign1.css" rel="stylesheet"/>
+    
+    <title>Calculator-06</title>
+    <script>
+    function btnaop_onclick(aop){
+
+        switch(aop){
+            case '+':
+                tbxres.value=Number(numfno.value) + Number(numsno.value);
+                break;
+            case '-':
+                tbxres.value=numfno.value - numsno.value;
+                break;
+            case 'x':
+                tbxres.value=numfno.value * numsno.value;
+                break;
+            case '/':
+                tbxres.value=numfno.value / numsno.value;
+                break;
+            case '%':
+                tbxres.value=numfno.value % numsno.value;
+                break;                
+        }
+    }
+  </script>
+
+</head>
+<body>
+    <table border="0"  class="center-middle">
+    <caption>Calculator-06</caption>
+        <tr>
+            <td>First Number</td>
+            <td><input type="number" id="numfno" placeholder="0"/></td>
+        </tr>
+        <tr>
+            <td>Second Number</td>
+            <td><input type="number" id="numsno" placeholder="0"/></td>
+        </tr>
+        <tr>
+            <td>Resullt</td>
+            <td><input type="text" id="tbxres" placeholder="0.0" readonly="readonly"/></td>
+        </tr>
+        <tr>
+        <td colspan="2" align="center">
+            <input type="button" value="Cancel" onclick="location.href='p06calc06.html';"/>
+            <input type="button" value="+" onclick="btnaop_onclick('+');"/>
+            <input type="button" value="-" onclick="btnaop_onclick('-');"/>
+            <input type="button" value="X" onclick="btnaop_onclick('x');"/>
+            <input type="button" value="%" onclick="btnaop_onclick('%');"/>
+            <input type="button" value="/" onclick="btnaop_onclick('/');"/>
+         </td>
+        </tr>
+    
+    </table>
